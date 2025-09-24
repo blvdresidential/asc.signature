@@ -182,6 +182,7 @@
       const cityStateZip = document.getElementById('cityStateZip').value;
 
       const logoUrl = "https://medialibrarycf.entrata.com/16505/MLv3/2025/09/24/120808/68d4338817013614.png";
+      const InstaPhotoUrl = "https://medialibrarycf.entrata.com/16505/MLv3/2025/09/24/123506/68d439dab043d212.png";
 
       let signatureHTML = `
         <table cellpadding="0" cellspacing="0" style="font-family: Aptos, sans-serif;">
@@ -202,6 +203,12 @@
               <div style="line-height: 8pt; font-size: 8pt;">&nbsp;</div>
               ${address ? `<span style="color: #899BA2;">${address}</span><br>` : ''}
               ${cityStateZip ? `<span style="color: #899BA2;">${cityStateZip}</span><br>` : ''}
+              <!-- Small Photo under address -->
+              <div style="margin-top:6px;">
+                <a href="https://www.instagram.com/ascconstructionservices/?igshid=1hbxefu63u72b" target="_blank">
+                  <img src="${InstaPhotoUrl}" alt="Follow us on Instagram" style="width:100px; height:auto; border:0;">
+                </a>
+              </div>
             </td>
           </tr>
         </table>
